@@ -10,7 +10,7 @@ Cargo.toml
 
 ```toml
 [dependencies]
-simple_wintun = { git = "https://github.com/xutianyi1999/SimpleWintun.git" }
+networks_wintun = { git = "https://github.com/jinisu/networks-wintun.git" }
 ```
 
 main.rs
@@ -18,8 +18,8 @@ main.rs
 ```rust
 use std::net::Ipv4Addr;
 use std::ops::Range;
-use simple_wintun::adapter::WintunAdapter;
-use simple_wintun::ReadResult;
+use networks_wintun::adapter::WintunAdapter;
+use networks_wintun::ReadResult;
 
 const SRC_ADDR: Range<usize> = 12..16;
 const DST_ADDR: Range<usize> = 16..20;
